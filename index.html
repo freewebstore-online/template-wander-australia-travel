@@ -1,0 +1,1570 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-fws-slot="business.name">Wander Australia</title>
+    <meta
+      name="description"
+      content="From sun-kissed beaches to the rugged outback, we craft unforgettable journeys into the soul of Australia."
+      data-fws-slot="business.tagline"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "media",
+        theme: {
+          extend: {
+            colors: {
+              ocean: {
+                100: "#e0f2fe",
+                200: "#bae6fd",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+              },
+              navy: {
+                800: "#1e293b",
+                900: "#0f172a",
+                950: "#020617",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+              serif: ["Playfair Display", "ui-serif", "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-stone-50 dark:bg-navy-950 text-gray-800 dark:text-gray-200 font-sans antialiased selection:bg-orange-500 selection:text-white"
+  >
+    <!-- Header / Nav -->
+    <header class="fixed w-full z-50 top-0 bg-black/20 backdrop-blur-sm">
+      <input type="checkbox" id="mobile-menu-toggle" class="peer sr-only" />
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          data-fws-slot="business.name"
+          class="text-2xl font-bold tracking-tighter text-white"
+          >Wander Australia</a
+        >
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8 text-white/90 font-medium">
+          <a href="#destinations" class="hover:text-white transition"
+            >Destinations</a
+          >
+          <a href="#experiences" class="hover:text-white transition"
+            >Experiences</a
+          >
+          <a href="#packages" class="hover:text-white transition">Packages</a>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="#contact"
+            class="hidden md:inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-lg shadow-orange-500/30"
+            >Book Now</a
+          >
+
+          <!-- Mobile Menu Button -->
+          <label
+            for="mobile-menu-toggle"
+            class="md:hidden cursor-pointer text-white p-2 z-10"
+          >
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </label>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="hidden peer-checked:block md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-lg"
+      >
+        <nav class="flex flex-col items-center text-center p-6 space-y-4">
+          <a
+            href="#destinations"
+            onclick="
+              document.getElementById('mobile-menu-toggle').checked = false
+            "
+            class="text-white/90 hover:text-white transition text-lg py-2"
+            >Destinations</a
+          >
+          <a
+            href="#experiences"
+            onclick="
+              document.getElementById('mobile-menu-toggle').checked = false
+            "
+            class="text-white/90 hover:text-white transition text-lg py-2"
+            >Experiences</a
+          >
+          <a
+            href="#packages"
+            onclick="
+              document.getElementById('mobile-menu-toggle').checked = false
+            "
+            class="text-white/90 hover:text-white transition text-lg py-2"
+            >Packages</a
+          >
+          <a
+            href="#contact"
+            onclick="
+              document.getElementById('mobile-menu-toggle').checked = false
+            "
+            class="text-white/90 hover:text-white transition text-lg py-2"
+            >Contact</a
+          >
+          <a
+            href="#contact"
+            onclick="
+              document.getElementById('mobile-menu-toggle').checked = false
+            "
+            class="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition w-full max-w-xs"
+            >Book Now</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Full-Screen Hero Journey Section -->
+    <section
+      class="relative h-screen min-h-[600px] flex items-center justify-center pt-20"
+    >
+      <!-- Unsplash Hero Image (Australian Landscape) -->
+      <img
+        src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        alt="Beautiful Australian Landscape"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-slate-900/90 dark:to-slate-950/90"
+      ></div>
+
+      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium tracking-wide mb-6 uppercase"
+          data-fws-slot="hero.badge"
+          >Your Adventure Awaits</span
+        >
+        <h1
+          class="text-5xl md:text-7xl lg:text-8xl font-serif text-white font-bold leading-tight mb-6 drop-shadow-lg"
+          data-fws-slot="hero.title"
+        >
+          Discover Australia's Wild Heart
+        </h1>
+        <p
+          class="text-lg md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto font-light drop-shadow"
+          data-fws-slot="hero.subtitle"
+        >
+          From sun-kissed beaches to the rugged outback, we craft unforgettable
+          journeys into the soul of Australia.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="#packages"
+            class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-xl shadow-orange-500/20"
+            >Explore Packages</a
+          >
+          <a
+            href="#destinations"
+            class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold transition"
+            >View Destinations</a
+          >
+        </div>
+      </div>
+
+      <!-- Floating Stat Cards -->
+      <div class="absolute bottom-0 left-0 w-full translate-y-1/2 px-4 z-20">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-gray-100 dark:border-slate-700"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 text-xl font-bold"
+            >
+              🎯
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-slate-900 dark:text-white">
+                50+
+              </div>
+              <div
+                class="text-sm text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide"
+              >
+                Unique Destinations
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-gray-100 dark:border-slate-700"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center text-orange-600 dark:text-orange-400 text-xl font-bold"
+            >
+              ⭐
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-slate-900 dark:text-white">
+                4.9/5
+              </div>
+              <div
+                class="text-sm text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide"
+              >
+                Guest Rating
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-gray-100 dark:border-slate-700"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-600 dark:text-green-400 text-xl font-bold"
+            >
+              🌍
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-slate-900 dark:text-white">
+                1,200+
+              </div>
+              <div
+                class="text-sm text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide"
+              >
+                Happy Travellers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Destinations Showcase -->
+    <section
+      id="destinations"
+      class="pt-44 md:pt-32 lg:pt-40 pb-24 bg-stone-50 dark:bg-slate-900"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <h2
+            class="text-sm font-bold tracking-widest text-orange-500 uppercase mb-3"
+          >
+            Iconic Locations
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white"
+          >
+            Australia's Most Loved Destinations
+          </h3>
+        </div>
+
+        <div class="space-y-24">
+          <!-- Destination 1 (Sydney) -->
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 relative group">
+              <div
+                class="absolute inset-0 bg-ocean-500 transform translate-x-4 translate-y-4 rounded-3xl -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Sydney Opera House"
+                class="rounded-3xl w-full h-[400px] md:h-[500px] object-cover shadow-2xl"
+              />
+            </div>
+            <div class="w-full lg:w-1/2">
+              <div
+                class="text-6xl font-serif text-gray-200 dark:text-slate-800 font-bold mb-4"
+              >
+                01
+              </div>
+              <h4
+                class="text-3xl md:text-4xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+              >
+                Sydney's Coastal Charm
+              </h4>
+              <p
+                class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed"
+              >
+                Explore the iconic Opera House, surf at Bondi Beach, and
+                discover the vibrant culture of Australia's largest city.
+              </p>
+              <a
+                href="#contact"
+                class="inline-flex items-center text-ocean-600 dark:text-ocean-400 font-bold hover:text-ocean-700 dark:hover:text-ocean-300 transition group"
+              >
+                Explore Sydney Tours
+                <span
+                  class="ml-2 transform group-hover:translate-x-2 transition-transform"
+                  >→</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <!-- Destination 2 (Uluru) Reversed -->
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20"
+          >
+            <div class="w-full lg:w-1/2 relative group">
+              <div
+                class="absolute inset-0 bg-orange-500 transform -translate-x-4 translate-y-4 rounded-3xl -z-10 transition-transform group-hover:-translate-x-6 group-hover:translate-y-6"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Uluru Sunset"
+                class="rounded-3xl w-full h-[400px] md:h-[500px] object-cover shadow-2xl"
+              />
+            </div>
+            <div class="w-full lg:w-1/2 text-left lg:text-right">
+              <div
+                class="text-6xl font-serif text-gray-200 dark:text-slate-800 font-bold mb-4"
+              >
+                02
+              </div>
+              <h4
+                class="text-3xl md:text-4xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+              >
+                The Outback's Spirit
+              </h4>
+              <p
+                class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed"
+              >
+                Witness the majestic Uluru at sunrise, learn about ancient
+                Indigenous culture, and sleep under a blanket of stars in the
+                Red Centre.
+              </p>
+              <a
+                href="#contact"
+                class="inline-flex items-center flex-row-reverse lg:flex-row text-orange-600 dark:text-orange-400 font-bold hover:text-orange-700 dark:hover:text-orange-300 transition group"
+              >
+                <span
+                  class="mr-2 lg:ml-2 lg:mr-0 transform group-hover:-translate-x-2 lg:group-hover:translate-x-2 transition-transform"
+                  >←</span
+                >
+                Explore Uluru Tours
+              </a>
+            </div>
+          </div>
+
+          <!-- Destination 3 (Great Barrier Reef) -->
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 relative group">
+              <div
+                class="absolute inset-0 bg-teal-500 transform translate-x-4 translate-y-4 rounded-3xl -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1533692328991-08159ff19fca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Great Barrier Reef"
+                class="rounded-3xl w-full h-[400px] md:h-[500px] object-cover shadow-2xl"
+              />
+            </div>
+            <div class="w-full lg:w-1/2">
+              <div
+                class="text-6xl font-serif text-gray-200 dark:text-slate-800 font-bold mb-4"
+              >
+                03
+              </div>
+              <h4
+                class="text-3xl md:text-4xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+              >
+                The Great Barrier Reef
+              </h4>
+              <p
+                class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed"
+              >
+                Dive into a world of vibrant coral and marine life. Snorkel,
+                sail, and explore the world's largest coral reef system.
+              </p>
+              <a
+                href="#contact"
+                class="inline-flex items-center text-teal-600 dark:text-teal-400 font-bold hover:text-teal-700 dark:hover:text-teal-300 transition group"
+              >
+                Explore Reef Tours
+                <span
+                  class="ml-2 transform group-hover:translate-x-2 transition-transform"
+                  >→</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Experiences Section -->
+    <section id="experiences" class="py-24 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <div class="max-w-2xl">
+            <h2
+              class="text-sm font-bold tracking-widest text-ocean-600 dark:text-ocean-500 uppercase mb-3"
+            >
+              Curated For You
+            </h2>
+            <h3
+              class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white"
+            >
+              Unforgettable Experiences
+            </h3>
+          </div>
+          <a
+            href="#contact"
+            class="w-full md:w-auto inline-flex items-center justify-center px-6 py-3 border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition rounded-full mt-6 md:mt-0"
+          >
+            View All Experiences
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Experience 1 -->
+          <div class="group relative overflow-hidden rounded-3xl h-[450px]">
+            <img
+              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Road Trips in Australia"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition duration-500"
+            >
+              <h4 class="text-2xl font-serif font-bold text-white mb-2">
+                Epic Road Trips
+              </h4>
+              <p
+                class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+              >
+                Journey along the Great Ocean Road or through the heart of the
+                Daintree Rainforest.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 2 -->
+          <div class="group relative overflow-hidden rounded-3xl h-[450px]">
+            <img
+              src="https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Wildlife Encounters"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition duration-500"
+            >
+              <h4 class="text-2xl font-serif font-bold text-white mb-2">
+                Wildlife Encounters
+              </h4>
+              <p
+                class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+              >
+                Meet kangaroos, koalas, and wombats in their natural habitats.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 3 -->
+          <div class="group relative overflow-hidden rounded-3xl h-[450px]">
+            <img
+              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Luxury Escapes"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition duration-500"
+            >
+              <h4 class="text-2xl font-serif font-bold text-white mb-2">
+                Luxury Escapes
+              </h4>
+              <p
+                class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+              >
+                Indulge in world-class lodges, fine dining, and exclusive
+                private tours.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 4 -->
+          <div class="group relative overflow-hidden rounded-3xl h-[450px]">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Beach Holidays"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition duration-500"
+            >
+              <h4 class="text-2xl font-serif font-bold text-white mb-2">
+                Beach Holidays
+              </h4>
+              <p
+                class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+              >
+                Relax on the pristine white sands of the Whitsundays or the Gold
+                Coast.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 5 -->
+          <div class="group relative overflow-hidden rounded-3xl h-[450px]">
+            <img
+              src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Romantic Getaways"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition duration-500"
+            >
+              <h4 class="text-2xl font-serif font-bold text-white mb-2">
+                Romantic Getaways
+              </h4>
+              <p
+                class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+              >
+                Secluded retreats and breathtaking views for the perfect
+                couple's escape.
+              </p>
+            </div>
+          </div>
+          <!-- Experience 6 -->
+          <div class="group relative overflow-hidden rounded-3xl h-[450px]">
+            <img
+              src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Surfing Tours"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition duration-500"
+            >
+              <h4 class="text-2xl font-serif font-bold text-white mb-2">
+                Surfing Tours
+              </h4>
+              <p
+                class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+              >
+                Catch the perfect wave at Australia's most famous surf breaks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Tour Packages -->
+    <section
+      id="packages"
+      class="py-24 bg-stone-100 dark:bg-slate-900 border-y border-stone-200 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2
+            class="text-sm font-bold tracking-widest text-orange-500 uppercase mb-3"
+          >
+            Our Best Trips
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white"
+          >
+            Featured Tour Packages
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Package 1 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-stone-100 dark:border-slate-700 flex flex-col"
+          >
+            <div class="relative h-64">
+              <img
+                src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Great Ocean Road"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1 rounded-full"
+              >
+                7 Days
+              </div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-4">
+                <h4
+                  class="text-2xl font-serif font-bold text-slate-900 dark:text-white"
+                >
+                  Great Ocean Road & Grampians
+                </h4>
+                <div
+                  class="flex items-center bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-500 px-2 py-1 rounded text-sm font-bold"
+                >
+                  ⭐ 4.8
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1">
+                A scenic drive along the iconic coastline, paired with hiking in
+                the majestic Grampians National Park.
+              </p>
+              <div
+                class="flex items-center justify-between mt-auto pt-6 border-t border-gray-100 dark:border-slate-700"
+              >
+                <div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    Starting from
+                  </div>
+                  <div
+                    class="text-2xl font-bold text-ocean-600 dark:text-ocean-400"
+                  >
+                    $1,899
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-slate-800 dark:hover:bg-gray-100 transition"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-stone-100 dark:border-slate-700 flex flex-col relative scale-100 lg:scale-105 z-10"
+          >
+            <div
+              class="absolute top-0 left-0 w-full bg-orange-500 text-white text-xs font-bold text-center py-1 uppercase tracking-widest z-20"
+            >
+              Most Popular
+            </div>
+            <div class="relative h-64 mt-6">
+              <img
+                src="https://images.unsplash.com/photo-1547005327-ef75a6961556?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Outback Adventure"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1 rounded-full"
+              >
+                10 Days
+              </div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-4">
+                <h4
+                  class="text-2xl font-serif font-bold text-slate-900 dark:text-white"
+                >
+                  Red Centre & Top End
+                </h4>
+                <div
+                  class="flex items-center bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-500 px-2 py-1 rounded text-sm font-bold"
+                >
+                  ⭐ 4.9
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1">
+                Experience the spiritual heart of Australia with Uluru, Kata
+                Tjuta, and the wonders of Kakadu.
+              </p>
+              <div
+                class="flex items-center justify-between mt-auto pt-6 border-t border-gray-100 dark:border-slate-700"
+              >
+                <div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    Starting from
+                  </div>
+                  <div
+                    class="text-2xl font-bold text-orange-600 dark:text-orange-400"
+                  >
+                    $3,499
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-stone-100 dark:border-slate-700 flex flex-col"
+          >
+            <div class="relative h-64">
+              <img
+                src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Tasmania Wilderness"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1 rounded-full"
+              >
+                5 Days
+              </div>
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <div class="flex justify-between items-start mb-4">
+                <h4
+                  class="text-2xl font-serif font-bold text-slate-900 dark:text-white"
+                >
+                  Tasmanian Wilderness
+                </h4>
+                <div
+                  class="flex items-center bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-500 px-2 py-1 rounded text-sm font-bold"
+                >
+                  ⭐ 4.7
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1">
+                Discover the pristine beauty of Cradle Mountain, Freycinet
+                National Park, and Hobart's vibrant culture.
+              </p>
+              <div
+                class="flex items-center justify-between mt-auto pt-6 border-t border-gray-100 dark:border-slate-700"
+              >
+                <div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    Starting from
+                  </div>
+                  <div
+                    class="text-2xl font-bold text-ocean-600 dark:text-ocean-400"
+                  >
+                    $1,599
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-slate-800 dark:hover:bg-gray-100 transition"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Travel With Us -->
+    <section class="py-24 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+          >
+            Why Travel With Wander Australia?
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400">
+            We're not just a travel agency; we're your personal guides to the
+            authentic Australian experience.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 mx-auto bg-ocean-100 dark:bg-ocean-900/30 rounded-2xl flex items-center justify-center text-ocean-600 dark:text-ocean-400 mb-6 transform rotate-3"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 00 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Local Expertise
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+              Our team lives and breathes Australia, offering you insider
+              knowledge and hidden gems.
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 mx-auto bg-orange-50 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center text-orange-600 dark:text-orange-400 mb-6 transform -rotate-3"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Save Time & Effort
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+              We handle all the planning and logistics, so you can relax and
+              enjoy the journey.
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 mx-auto bg-green-50 dark:bg-green-900/30 rounded-2xl flex items-center justify-center text-green-600 dark:text-green-400 mb-6 transform rotate-3"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+              Tailor-Made Trips
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+              Every itinerary is customized to your interests, budget, and
+              travel style.
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 mx-auto bg-purple-50 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6 transform -rotate-3"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+              24/7 Support
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+              We're here for you every step of the way, with on-ground support
+              whenever you need it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Planning Process (Timeline) -->
+    <section class="py-24 bg-stone-50 dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+          >
+            Your Journey Starts Here
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400">
+            A simple, transparent process to build your dream Australian
+            holiday.
+          </p>
+        </div>
+
+        <div class="relative">
+          <!-- Timeline line -->
+          <div
+            class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 dark:bg-slate-700 -translate-y-1/2"
+          ></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+            <!-- Step 1 -->
+            <div class="text-center relative">
+              <div
+                class="w-16 h-16 mx-auto bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg shadow-orange-500/30 mb-6 border-4 border-white dark:border-slate-900"
+              >
+                1
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                Tell Us Your Dream
+              </h4>
+              <p class="text-gray-600 dark:text-gray-400">
+                Share your travel ideas with us through a free, no-obligation
+                consultation call.
+              </p>
+            </div>
+            <!-- Step 2 -->
+            <div class="text-center relative">
+              <div
+                class="w-16 h-16 mx-auto bg-ocean-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg shadow-ocean-600/30 mb-6 border-4 border-white dark:border-slate-900"
+              >
+                2
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                Craft Your Itinerary
+              </h4>
+              <p class="text-gray-600 dark:text-gray-400">
+                We'll design a personalized plan and refine it with you until
+                it's perfect.
+              </p>
+            </div>
+            <!-- Step 3 -->
+            <div class="text-center relative">
+              <div
+                class="w-16 h-16 mx-auto bg-teal-500 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg shadow-teal-500/30 mb-6 border-4 border-white dark:border-slate-900"
+              >
+                3
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                Book & Explore
+              </h4>
+              <p class="text-gray-600 dark:text-gray-400">
+                Once you're happy, we'll handle all bookings. All that's left is
+                to pack your bags!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Australia Travel Gallery -->
+    <section class="py-24 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+          >
+            From Our Travellers' Lens
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="col-span-2 row-span-2 rounded-2xl overflow-hidden h-[400px] md:h-[600px] group"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Kangaroo in wild"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+            />
+          </div>
+          <div class="rounded-2xl overflow-hidden h-[192px] md:h-[292px] group">
+            <img
+              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Road Trip"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+            />
+          </div>
+          <div class="rounded-2xl overflow-hidden h-[192px] md:h-[292px] group">
+            <img
+              src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Sydney Opera House"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+            />
+          </div>
+          <div
+            class="col-span-2 rounded-2xl overflow-hidden h-[192px] md:h-[292px] group"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Uluru"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Traveller Stories (Testimonials) -->
+    <section
+      class="py-24 bg-stone-100 dark:bg-slate-900 border-y border-stone-200 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+          >
+            Stories From the Road
+          </h2>
+          <div class="flex justify-center gap-1 text-yellow-500 mb-6">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-md border border-stone-100 dark:border-slate-700 relative"
+          >
+            <div
+              class="absolute -top-6 left-10 text-6xl text-orange-200 dark:text-slate-700 font-serif"
+            >
+              "
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300 italic mb-8 relative z-10 text-lg leading-relaxed"
+            >
+              "The entire trip was seamless. Wander Australia thought of every
+              detail, allowing us to truly immerse ourselves in the beauty of
+              the Outback. Unforgettable!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold font-serif"
+              >
+                A
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white">
+                  Anna & Tom
+                </div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                  From the UK
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-md border border-stone-100 dark:border-slate-700 relative"
+          >
+            <div
+              class="absolute -top-6 left-10 text-6xl text-orange-200 dark:text-slate-700 font-serif"
+            >
+              "
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300 italic mb-8 relative z-10 text-lg leading-relaxed"
+            >
+              "As a solo traveller, I felt completely safe and supported. The
+              local guides were fantastic and I made friends for life. Best
+              decision I ever made."
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold font-serif"
+              >
+                M
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white">
+                  Michael B.
+                </div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                  From Canada
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-md border border-stone-100 dark:border-slate-700 relative"
+          >
+            <div
+              class="absolute -top-6 left-10 text-6xl text-orange-200 dark:text-slate-700 font-serif"
+            >
+              "
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300 italic mb-8 relative z-10 text-lg leading-relaxed"
+            >
+              "Our family adventure in Queensland was perfect. The mix of beach
+              time and rainforest exploration was exactly what we wanted. The
+              kids are already asking to go back!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold font-serif"
+              >
+                S
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 dark:text-white">
+                  The Smith Family
+                </div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                  From the USA
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white dark:bg-slate-950">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white mb-6"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <details
+            class="group bg-stone-50 dark:bg-slate-900 rounded-2xl p-6 open:bg-white dark:open:bg-slate-800 open:shadow-lg transition duration-300 border border-transparent open:border-stone-200 dark:open:border-slate-700"
+          >
+            <summary
+              class="flex justify-between items-center font-bold cursor-pointer list-none text-lg text-slate-900 dark:text-white"
+            >
+              <span>What's the best time to visit Australia?</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
+              Australia is a year-round destination! Summer (Dec-Feb) is perfect
+              for southern beaches, while the dry season (Apr-Sep) is ideal for
+              the tropical north and the outback.
+            </p>
+          </details>
+
+          <!-- FAQ Item 2 -->
+          <details
+            class="group bg-stone-50 dark:bg-slate-900 rounded-2xl p-6 open:bg-white dark:open:bg-slate-800 open:shadow-lg transition duration-300 border border-transparent open:border-stone-200 dark:open:border-slate-700"
+          >
+            <summary
+              class="flex justify-between items-center font-bold cursor-pointer list-none text-lg text-slate-900 dark:text-white"
+            >
+              <span>Can you accommodate dietary requirements?</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
+              Absolutely. We work closely with all our tour operators and
+              accommodation partners to ensure any dietary needs are met. Just
+              let us know during the planning phase.
+            </p>
+          </details>
+
+          <!-- FAQ Item 3 -->
+          <details
+            class="group bg-stone-50 dark:bg-slate-900 rounded-2xl p-6 open:bg-white dark:open:bg-slate-800 open:shadow-lg transition duration-300 border border-transparent open:border-stone-200 dark:open:border-slate-700"
+          >
+            <summary
+              class="flex justify-between items-center font-bold cursor-pointer list-none text-lg text-slate-900 dark:text-white"
+            >
+              <span>What's included in the tour packages?</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
+              Each package is different, but they typically include
+              accommodation, specified tours and activities, some meals, and
+              ground transport. We'll provide a detailed inclusion list with
+              your itinerary.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section
+      id="contact"
+      class="py-24 bg-ocean-600 dark:bg-ocean-700 text-white relative overflow-hidden"
+    >
+      <!-- Decorative element -->
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2
+              class="text-4xl md:text-5xl font-serif font-bold mb-6"
+              data-fws-slot="contact.title"
+            >
+              Ready to Start Your Adventure?
+            </h2>
+            <p
+              class="text-ocean-100 text-lg mb-10"
+              data-fws-slot="contact.subtitle"
+            >
+              Our expert travel designers are ready to help you craft the trip
+              of a lifetime. Get in touch for a free, no-obligation chat about
+              your Australian dream.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-ocean-200">Call Us</div>
+                  <div class="text-xl font-bold" data-fws-slot="contact.phone">
+                    (02) 1234 5678
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-ocean-200">Email Us</div>
+                  <a
+                    href="mailto:hello@wanderaustralia.com"
+                    class="text-xl font-bold hover:underline"
+                    data-fws-slot="contact.email"
+                    >hello@wanderaustralia.com</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-ocean-200">Visit Us</div>
+                  <div
+                    class="text-lg font-bold"
+                    data-fws-slot="contact.address"
+                  >
+                    123 Harbour St, Sydney, NSW 2000
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-navy-900 rounded-3xl p-8 md:p-10 shadow-2xl text-slate-900 dark:text-white"
+          >
+            <h3 class="text-2xl font-bold mb-6">Send an Enquiry</h3>
+            <form class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-ocean-500 transition"
+                    placeholder="John"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-ocean-500 transition"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-ocean-500 transition"
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  >Destination of Interest</label
+                >
+                <select
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-ocean-500 transition"
+                >
+                  <option>Sydney & NSW</option>
+                  <option>Great Barrier Reef</option>
+                  <option>Outback & Uluru</option>
+                  <option>Tasmania</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  >Message</label
+                >
+                <textarea
+                  rows="4"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-ocean-500 transition"
+                  placeholder="Tell us about your dream trip..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-orange-500/30"
+              >
+                Request My Free Consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="bg-navy-950 text-gray-400 py-16 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="col-span-1 md:col-span-2 lg:col-span-1">
+            <div
+              class="text-2xl font-bold text-white mb-6"
+              data-fws-slot="business.name"
+            >
+              Wander Australia
+            </div>
+            <p class="mb-6 max-w-sm" data-fws-slot="business.description">
+              We are a boutique travel agency specializing in bespoke, authentic
+              Australian adventures. Let us show you the real Australia.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                data-fws-slot="social.facebook"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-ocean-500 hover:text-white transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                data-fws-slot="social.instagram"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                data-fws-slot="social.youtube"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="md:col-start-3">
+            <h4 class="text-white font-bold mb-6">Explore</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#destinations" class="hover:text-white transition"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#experiences" class="hover:text-white transition"
+                  >Experiences</a
+                >
+              </li>
+              <li>
+                <a href="#packages" class="hover:text-white transition"
+                  >Tours</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Information</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Travel Insurance</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-slate-800 text-sm text-center flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p>
+            &copy; 2024
+            <span data-fws-slot="business.name">Wander Australia</span>. All
+            Rights Reserved.
+          </p>
+          <span data-fws-slot="fws.byline"
+            >Template by kirantikoo · made with FreeWebStore</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
